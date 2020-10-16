@@ -46,7 +46,7 @@ jinja2 = Jinja2(
     loader=FileSystemLoader("./templates"),    
 )
 
-# Lets extend environment with some globals
+# Let's extend environment with some globals
 jinja2.globals({
     "token": "extensions.token",
 }).policies({
