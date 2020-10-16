@@ -1,10 +1,9 @@
 # sanic-aioja
 [aioja](https://github.com/dldevinc/aioja) template renderer for Sanic.
 
-This library has been inspired by so many other projects 
-([sanic-jinja2](https://github.com/lixxu/sanic-jinja2), 
-[django-jinja](https://github.com/niwinz/django-jinja)). 
-So thanks all for the inspiration.
+This library has been inspired by so many other projects such as
+[sanic-jinja2](https://github.com/lixxu/sanic-jinja2) and
+[django-jinja](https://github.com/niwinz/django-jinja)).
 
 [![PyPI](https://img.shields.io/pypi/v/sanic-aioja.svg)](https://pypi.org/project/sanic-aioja/)
 [![Build Status](https://travis-ci.org/dldevinc/sanic-aioja.svg?branch=master)](https://travis-ci.org/dldevinc/sanic-aioja)
