@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <h3>{{ _('Image') }}</h3>
+  <img src="{{ static('puffin.jpg') }}" width="240" alt="">
+
+  {% if array %}
+    <h3>{{ _('Array') }}</h3>
+    <ul>
+      {% for item in array %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <h3>{{ _('Undefined variable') }}</h3>
+  {{ missing }}
+
+  <h3>{{ _('Globals, Filters, Tests, Extensions') }}</h3>
+  <dl>
+    <dt>Global function <code>token()</code></dt>
+    <dd>{{ token() }}</dd>
+
+    <dt>Filter <code>shuffle()</code></dt>
+    <dd>{{ "Secret key"|shuffle }}</dd>
+
+    <dt>Test function <code>is digit</code></dt>
+    <dd>{{ "42" is digit }}</dd>
+
+    <dt>Extension <code>{% raw %}{% reverse %}{% endraw %}</code></dt>
+    <dd>{% reverse %}Hello, World!{% endreverse %}</dd>
+  </dl>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>HTML5 Boilerplate</title>
+  <meta name="description" content="HTML5 Boilerplate">
+  <meta name="author" content="sanic-aioja">
+
+  <style>
+    h3 {
+        margin-top: 2em;
+        margin-bottom: 0.2em;
+    }
+
+    p {
+        margin-top: 0.1em;
+    }
+
+    ul {
+        margin: 0.5em;
+        padding-left: 1em;
+    }
+  </style>
+</head>
+
+<body style="margin: 2em 3em">
+  <h1>{{ header }}</h1>
+
+  <h3>{{ _('Links') }}</h3>
+  <ul>
+    <li><a href="{{ url('index') }}"><code>jinja2.template</code> decorator</a></li>
+    <li><a href="{{ url('manual_render') }}"><code>jinja2.render_to_string</code></a></li>
+    <li><a href="{{ url('ru_locale') }}">ru locale</a></li>
+  </ul>
+
+  {% block content %}{% endblock %}
+</body>
+</html>
